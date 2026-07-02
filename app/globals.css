@@ -1,0 +1,18 @@
+/* Minimal document base. The page surface is painted by `.mn-root` in
+   src/marketing/monday/monday.css; here we only zero the document margins
+   and set the white behind the app (monday.com's page surface) so there is
+   no flash before the React tree mounts. */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #ffffff; /* --mn-paper */
+  color-scheme: light;
+}
+
+body {
+  min-height: 100svh;
+}
