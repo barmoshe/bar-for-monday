@@ -8,7 +8,7 @@ import { ImageResponse } from 'next/og';
 // it uses a flexbox-only subset of CSS and plain hex colours (Latin text only).
 
 export const alt =
-  'Bar Moshe for monday.com — AI Software Engineer, RevAI. MCP servers on npm, durable agent pipelines on Temporal, LLM apps with retries and evals.';
+  'Bar Moshe for monday.com — You lead. I build agents. AI Software Engineer, RevAI: MCP servers on npm, durable agent pipelines on Temporal, LLM apps with retries and evals.';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -93,44 +93,37 @@ export default function Image() {
           </div>
         </div>
 
-        {/* Headline: their giant light type with the pink→orange gradient phrase */}
+        {/* Headline: their agents-era near-black giant type, purple end-word */}
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <div
             style={{
               display: 'flex',
               flexDirection: 'column',
-              fontSize: 68,
+              fontSize: 84,
               fontWeight: 400,
-              color: '#333333',
-              letterSpacing: '-0.03em',
-              lineHeight: 1.08,
+              color: '#000000',
+              letterSpacing: '-0.035em',
+              lineHeight: 1.04,
               maxWidth: '1020px',
             }}
           >
-            <div style={{ display: 'flex' }}>Bar Moshe</div>
-            <div
-              style={{
-                display: 'flex',
-                backgroundImage: 'linear-gradient(90deg, #FE81E4 20%, #FDA900 90%)',
-                backgroundClip: 'text',
-                color: 'transparent',
-              }}
-            >
-              AI builder &amp; full-stack engineer
+            <div style={{ display: 'flex' }}>You lead.</div>
+            <div style={{ display: 'flex' }}>
+              I build&nbsp;<span style={{ color: '#6161ff' }}>agents.</span>
             </div>
           </div>
           <div
             style={{
               display: 'flex',
               fontSize: 28,
-              color: '#676879',
-              marginTop: '24px',
+              color: '#585965',
+              marginTop: '26px',
               maxWidth: '940px',
               lineHeight: 1.4,
             }}
           >
-            MCP servers on npm, durable agent pipelines on Temporal, LLM apps with
-            retries and evals, and the DevOps around them.
+            Bar Moshe: MCP servers on npm, durable agent pipelines on Temporal,
+            LLM apps with retries and evals. Every link is live.
           </div>
         </div>
 

@@ -13,15 +13,16 @@ const poppins = Poppins({
 });
 
 // Ad-hoc, personalized application page for Bar Moshe's "AI Software Engineer,
-// RevAI" application to monday.com (Tel Aviv, hybrid). Built in monday.com's
-// own visual language, read live off monday.com: white surface, Poppins,
-// gradient keyword phrases clipped into giant light headlines, indigo #6161FF
-// pill CTAs with arrows, pastel suite cards, a dot-grid workflow canvas with
-// AI-agent nodes as the centerpiece, a rainbow-bordered AI chat input, and a
-// near-black foundation close. Noindex, a shareable link for the RevAI team.
+// RevAI" application to monday.com (Tel Aviv, hybrid). Rebuilt 2026-07-11 in
+// monday.com's NEW agents-era visual language ("You lead. Agents act."), read
+// live off monday.com in Chrome: near-black Poppins display type, indigo
+// #6161FF accent end-words, lilac tag pills, agent character cards, a dark
+// board mockup with classic monday status pills, a line-art figure that fills
+// with color on scroll, floating RevAI context cards (Amanda / Jax / Oscar),
+// and a giant centered close. Noindex, a shareable link for the RevAI team.
 const ogTitle = "Bar Moshe × monday.com — AI Software Engineer, RevAI";
 const ogDescription =
-  "Bar Moshe, AI builder and full-stack engineer in Israel. MCP servers on npm, durable agent pipelines on Temporal (Code Exchange featured), LLM apps with retries and evals, and the DevOps around them.";
+  "You lead. I build agents. Bar Moshe for monday.com's RevAI team: MCP servers on npm, durable agent pipelines on Temporal (Code Exchange featured), LLM apps with retries and evals. Every link is live.";
 
 export const metadata: Metadata = {
   title: ogTitle,
