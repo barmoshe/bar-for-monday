@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import MondayApp from "@/src/marketing/monday/MondayApp";
+import PaymentsApp from "@/src/marketing/monday-payments/PaymentsApp";
 
-// monday.com sets everything in Poppins (read live off monday.com, 2026-07-03:
-// "Poppins, Roboto, Helvetica, Arial, sans-serif" on body, 64px weight-400
-// hero headlines at -1.28px tracking). Four weights, exposed as --font-mn.
+// monday.com sets everything in Poppins (read live off monday.com/pricing,
+// 2026-07-15: "Poppins, Arial, sans-serif" on body, weight-400 near-black
+// display at ~-0.03em tracking). Four weights, exposed as --font-mn.
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
@@ -12,17 +12,20 @@ const poppins = Poppins({
   display: "swap",
 });
 
-// Ad-hoc, personalized application page for Bar Moshe's "AI Software Engineer,
-// RevAI" application to monday.com (Tel Aviv, hybrid). Rebuilt 2026-07-11 in
-// monday.com's NEW agents-era visual language ("You lead. Agents act."), read
-// live off monday.com in Chrome: near-black Poppins display type, indigo
-// #6161FF accent end-words, lilac tag pills, agent character cards, a dark
-// board mockup with classic monday status pills, a line-art figure that fills
-// with color on scroll, floating RevAI context cards (Amanda / Jax / Oscar),
-// and a giant centered close. Noindex, a shareable link for the RevAI team.
-const ogTitle = "Bar Moshe × monday.com — AI Software Engineer, RevAI";
+// Ad-hoc, personalized application page for Bar Moshe's "Software Engineer,
+// Payments Foundations Group" application to monday.com (Tel Aviv, on-site) —
+// a SECOND, distinct monday.com role. Built 2026-07-15 against monday.com's
+// live PRICING page (their real money / billing / AI-credits surface, which
+// is the exact domain this role owns): white Poppins display type, indigo
+// #6161FF pill CTAs, the cyan->purple gradient keyword, the navy "Most
+// Popular" banner, a seat selector, a Monthly/Yearly toggle, plan cards, and
+// "AI credits" chips. Centerpiece: a working billing engine whose controls
+// drive an event-driven pipeline (proration -> invoice -> credit rebucket ->
+// ledger -> downstream). Noindex; the RevAI role page lives at /revai.
+const ogTitle =
+  "Bar Moshe × monday.com — Software Engineer, Payments Foundations Group";
 const ogDescription =
-  "You lead. I build agents. Bar Moshe for monday.com's RevAI team: MCP servers on npm, durable agent pipelines on Temporal (Code Exchange featured), LLM apps with retries and evals. Every link is live.";
+  "Bar Moshe's application for Software Engineer, Payments Foundations Group at monday.com. A working billing model (proration, invoicing, AI-credit rebucket, event-driven propagation), plus Temporal, retries and evals work. Every project link is live.";
 
 export const metadata: Metadata = {
   title: ogTitle,
@@ -44,10 +47,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function MondayPage() {
+export default function PaymentsPage() {
   return (
     <div className={poppins.variable}>
-      <MondayApp />
+      <PaymentsApp />
     </div>
   );
 }

@@ -1,14 +1,14 @@
 import { ImageResponse } from 'next/og';
 
-// Dynamic share card for the bar-for-monday "/" page (Payments Foundations
-// Group), matching monday.com's live PRICING brand: white surface, giant
-// light near-black Poppins-style type with a cyan->purple gradient keyword
-// phrase, an indigo (#6161FF) CTA pill, and the three-capsule mark nod
-// (red/yellow/green). Rendered at build time by next/og (Satori), so it uses
-// a flexbox-only subset of CSS and plain hex colours (Latin text only).
+// Dynamic share card for the bar-for-monday application page, matching the
+// page's look — monday.com's real brand, read live off monday.com: white
+// surface, giant light near-black Poppins-style type with a pink→orange
+// gradient keyword phrase, an indigo (#6161FF) CTA pill, and the three-capsule
+// mark nod (red/yellow/green). Rendered at build time by next/og (Satori), so
+// it uses a flexbox-only subset of CSS and plain hex colours (Latin text only).
 
 export const alt =
-  'Bar Moshe for monday.com — I build systems that stay correct when things fail. Software Engineer, Payments Foundations Group: a working billing model, proration, AI-credit rebucket, event-driven propagation.';
+  'Bar Moshe for monday.com — You lead. I build agents. AI Software Engineer, RevAI: MCP servers on npm, durable agent pipelines on Temporal, LLM apps with retries and evals.';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -25,7 +25,7 @@ export default function Image() {
           padding: '64px 72px 48px',
           backgroundColor: '#ffffff',
           backgroundImage:
-            'radial-gradient(700px 400px at 50% -10%, rgba(97,97,255,0.10), transparent 64%), radial-gradient(520px 340px at 92% 100%, rgba(153,88,253,0.12), transparent 60%), radial-gradient(460px 320px at 6% 96%, rgba(18,227,254,0.10), transparent 62%)',
+            'radial-gradient(720px 420px at 50% -10%, rgba(97,97,255,0.10), transparent 65%), radial-gradient(520px 340px at 92% 100%, rgba(254,129,228,0.12), transparent 60%)',
           fontFamily: 'sans-serif',
         }}
       >
@@ -84,56 +84,46 @@ export default function Image() {
               padding: '8px 18px',
               borderRadius: 999,
               backgroundColor: 'rgba(97,97,255,0.10)',
-              fontSize: 21,
+              fontSize: 22,
               fontWeight: 500,
               color: '#6161ff',
             }}
           >
-            for monday.com · Payments Foundations
+            for monday.com · Application
           </div>
         </div>
 
-        {/* Headline: their pricing near-black giant type, gradient keyword */}
+        {/* Headline: their agents-era near-black giant type, purple end-word */}
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <div
             style={{
               display: 'flex',
               flexDirection: 'column',
-              fontSize: 76,
+              fontSize: 84,
               fontWeight: 400,
               color: '#000000',
               letterSpacing: '-0.035em',
-              lineHeight: 1.05,
-              maxWidth: '1040px',
+              lineHeight: 1.04,
+              maxWidth: '1020px',
             }}
           >
-            <div style={{ display: 'flex' }}>I build systems that</div>
+            <div style={{ display: 'flex' }}>You lead.</div>
             <div style={{ display: 'flex' }}>
-              <span
-                style={{
-                  display: 'flex',
-                  backgroundImage: 'linear-gradient(90deg,#12e3fe,#9958fd)',
-                  backgroundClip: 'text',
-                  color: 'transparent',
-                }}
-              >
-                stay correct
-              </span>
-              &nbsp;when things fail.
+              I build&nbsp;<span style={{ color: '#6161ff' }}>agents.</span>
             </div>
           </div>
           <div
             style={{
               display: 'flex',
-              fontSize: 27,
+              fontSize: 28,
               color: '#585965',
-              marginTop: '24px',
-              maxWidth: '960px',
+              marginTop: '26px',
+              maxWidth: '940px',
               lineHeight: 1.4,
             }}
           >
-            A working billing model: proration, invoicing, AI-credit rebucket,
-            event-driven propagation. Plus Temporal, retries and evals work.
+            Bar Moshe: MCP servers on npm, durable agent pipelines on Temporal,
+            LLM apps with retries and evals. Every link is live.
           </div>
         </div>
 
@@ -159,7 +149,7 @@ export default function Image() {
               color: '#ffffff',
             }}
           >
-            Software Engineer, Payments Foundations · Tel Aviv →
+            AI Software Engineer, RevAI · Tel Aviv →
           </div>
         </div>
       </div>
